@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #e6e4e4;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0,0,0, 0.2);
+  border-radius: 5px;
+}
+  
+.nav-link.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    height: 70px;
+    background-color: #1E1E1E;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    position: absolute; /* Mutlak konumlandırma */
+    width: 100%; /* Navbar'ı tam genişlikte yap */
+    transition: top 0.3s; /* Animasyonlu geçiş */
+  }
+  
+.navbar-fixed {
+    top: 0; /* Sayfanın en üstüne yerleştir */
+    position: fixed; /* Sabitlenmiş konumlandırma */
+    z-index: 1000; /* Diğer içeriklerin üzerinde olmasını sağla */
+}
+  
+.main-content {
+    margin-top: 70px; /* Navbar yüksekliği kadar boşluk bırak */
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* Resmi %10 büyüt */
+  }
+
+/* src/components/Navbar.css */
+
+  

@@ -1,0 +1,36 @@
+/* Sidebar container */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 250px;
+  position: relative;
+  z-index: 2000;
+  top: 0;
+  height: 90vh; /* Full height */
+}
+
+/* Fixed position class */
+.fixed {
+  position: fixed;
+}
+
+/* Sidebar items */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer; /* Change cursor to pointer */
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  background-color: grey; /* Highlight on hover */
+}
+
+.sidebar-item span {
+  margin-left: 10px;
+}
